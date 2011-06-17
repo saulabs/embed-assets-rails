@@ -8,7 +8,11 @@ module Saukopf::EmbedAssets
 
     def evaluate(context, locals, &block)
       @asset_contents = {}
-      Rails.application.config.assets.embed_assets ? with_data_uris(data) : data
+      embed_assets_enabled? ? with_data_uris(data) : data
+    end
+
+    def embed_assets_enabled?
+      Rails.application.config.assets.embed_assets
     end
 
     protected
