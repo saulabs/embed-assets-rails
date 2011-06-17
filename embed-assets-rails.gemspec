@@ -9,8 +9,9 @@ Gem::Specification.new do |s|
   s.authors     = ["kommen"]
   s.email       = ["dieter@komendera.com"]
   s.homepage    = "http://www.saulabs.net/"
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Embed images and fonts in CSS files with the Rails asset pipeline }
+  s.description = %q{This gem provides integration of embedding images and fonts as base64 into CSS files within the Rails asset pipeline.
+  More about embedding assets and how it works, see the [jammit documentation][1]. This gem actually reuses code from that project.}
 
   s.rubyforge_project = "embed-assets-rails"
 
