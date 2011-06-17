@@ -4,7 +4,7 @@ require "embed-assets-rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "embed-assets-rails"
-  s.version     = Saukopf::EmbedAssets::VERSION
+  s.version     = Saulabs::EmbedAssets::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["kommen"]
   s.email       = ["dieter@komendera.com"]

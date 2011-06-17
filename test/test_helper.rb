@@ -7,7 +7,7 @@ require 'base64'
 
 FIXTURE_PATH = "#{File.dirname(__FILE__)}/fixtures"
 
-module Saukopf
+module Saulabs
   module EmbedAssets
   end
 end

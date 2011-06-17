@@ -1,7 +1,7 @@
 require 'test_helper'
 require 'embed-assets-rails/processor'
 
-module Saukopf::EmbedAssets
+module Saulabs::EmbedAssets
   class Processor
     def embed_assets_enabled?
       true
@@ -11,11 +11,11 @@ end
 
 class EmbedAssetsProcessorTest < Test::Unit::TestCase
 
-  include Saukopf::EmbedAssets
+  include Saulabs::EmbedAssets
 
   def test_classes_are_loaded
-    assert_kind_of Module, Saukopf::EmbedAssets
-    assert_kind_of Class, Saukopf::EmbedAssets::Processor
+    assert_kind_of Module, Saulabs::EmbedAssets
+    assert_kind_of Class, Saulabs::EmbedAssets::Processor
   end
 
   def test_embedding_assets

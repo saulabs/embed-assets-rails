@@ -1,5 +1,5 @@
 
-module Saukopf
+module Saulabs
   module EmbedAssets
   end
 end

@@ -1,6 +1,6 @@
 require 'tilt'
 
-module Saukopf::EmbedAssets
+module Saulabs::EmbedAssets
 
   class Processor < Tilt::Template
     def prepare
