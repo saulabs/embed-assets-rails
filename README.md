@@ -32,3 +32,7 @@ Thanks to documentcloud for creating [jammit][2].
 
 [2]: http://documentcloud.github.com/jammit/
 
+## Running Tests
+
+    $ bundle install
+    $ bundle exec rake test
