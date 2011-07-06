@@ -1,8 +1,10 @@
 module Saulabs::EmbedAssets
   class Railtie < ::Rails::Railtie
-    config.after_initialize do |app|
+
+    initializer "saulabs.sprockets.embed_assets", :after => 'setup_compression' do |app|
       app.config.assets.embed_assets = false if app.config.assets.embed_assets.nil?
-      app.assets.register_bundle_processor 'text/css', Saulabs::EmbedAssets::Processor
+      app.config.assets.bundle_processors << ['text/css', Saulabs::EmbedAssets::Processor]
     end
+
   end
 end
