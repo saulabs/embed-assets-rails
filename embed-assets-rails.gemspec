@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "embed-assets-rails"
 
-  s.add_runtime_dependency 'railties',   '~> 3.1.0.rc1'
-  s.add_runtime_dependency 'actionpack', '~> 3.1.0.rc1'
+  s.add_runtime_dependency 'railties',   '~> 3.1.0.rc4'
+  s.add_runtime_dependency 'actionpack', '~> 3.1.0.rc4'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
