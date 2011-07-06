@@ -3,6 +3,10 @@ module Sprockets
 
   class Railtie
 
+    initializer "sprockets.set_configs.bundle_processors", :after => "sprockets.set_configs" do |app|
+      app.config.assets.bundle_processors ||= []
+    end
+
     protected
 
     def asset_environment_with_bundle_processors(app)
